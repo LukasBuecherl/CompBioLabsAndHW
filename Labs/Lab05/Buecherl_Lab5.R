@@ -55,7 +55,7 @@ setwd("/Users/lukas/Library/Mobile Documents/com~apple~CloudDocs/CU Boulder/Spri
 write.csv(x = FiftyToOneHundred, file = "FiftyToOneHundred.csv")
 
 
-# Lab step #3: Going be to climate change !
+# Lab step #3: Going against climate change !
 # Import data set
 CO2_data <- read.csv("~/Library/Mobile Documents/com~apple~CloudDocs/CU Boulder/Spring 2021/Computational Biology/CompBioSandbox/CompBio_on_git/Labs/Lab04/CO2_data_cut_paste.csv")
 
