@@ -1,4 +1,4 @@
-# EBIO 5420: Computational Biology 
+# EBIO 5420: Computational Biology
 # Prof: Samuel Flaxman
 # Student: Lukas Buecherl
 # Lab 5
@@ -8,7 +8,7 @@
 
 # Lab step #1: First if-statement !
 x <- 42 # Number to check
-threshold <- 5 # Chosen threshold 
+threshold <- 5 # Chosen threshold
 
 if(x > threshold){
   sprintf("%s is bigger than %s", x, threshold)
@@ -23,16 +23,16 @@ ExampleData <- read.csv("~/Library/Mobile Documents/com~apple~CloudDocs/CU Bould
 # Change data set to vector
 data <- ExampleData$x
 
-# Part 2a): Getting rid of negativity 
+# Part 2a): Getting rid of negativity
 for(i in seq(1:length(data))){
   if(data[i] < 0){
-    data[i] <- NA # Replace negative numbers with NA 
+    data[i] <- NA # Replace negative numbers with NA
   }
 }
 
 # Part 2b): Replacing NA with NaN
 index <- is.na(data) # Logical indexing
-data[index] <- NaN  
+data[index] <- NaN
 
 # Part 2c): Back to zero
 index <- which(is.nan(data)) # Integer indexing
@@ -84,20 +84,20 @@ n <- c(initPrey, rep(NA, length(time) - 1))
 p <- c(initPred, rep(NA, length(time) - 1))
 
 for (t in 2:length(time)) {
-  
+
   n[t] <- n[t-1] + (r * n[t-1]) - (a * n[t-1] * p[t-1])
   p[t] <- p[t-1] + (k * a * n[t-1] * p[t-1]) - (m * p[t-1])
-  
+
   # Catch if prey population drops below 0
   if(n[t] < 0){
     n[t] <- 0
   }
-  
+
   # Catch if predators population drops below 0
   if(p[t] < 0){
     p[t] <- 0
   }
-  
+
 }
 
 # Create plot of data
@@ -119,30 +119,46 @@ write.csv(x = myResults, file = "PredPreyResults.csv")
 
 # Define function that calculates the LotkaVolterra model
 LotkaVolterra <- function(totalGenerations, initPrey, initPred, a, r, m, k){
-  
+
+# Function that calculates the LotkaVolterra model
+
+# Inputs:
+# totalGenerations: Number of total Generations
+# initPrey: initial prey abundance at time t = 1
+# initPred:	initial predator abundance at time t = 1
+# a: attack rate
+# r: growth rate of prey
+# m: mortality rate of predators
+# k: conversion constant of prey into predators
+
+# Output:
+# Matrix with three columns holding the timepoints, abundance of prey, and
+# abundance of the predators
+
+
   time <- seq(1:totalGenerations)
   n <- c(initPrey, rep(NA, length(time) - 1))
   p <- c(initPred, rep(NA, length(time) - 1))
-  
+
   for (t in 2:length(time)) {
-    
+
     n[t] <- n[t-1] + (r * n[t-1]) - (a * n[t-1] * p[t-1])
     p[t] <- p[t-1] + (k * a * n[t-1] * p[t-1]) - (m * p[t-1])
-    
+
     # Catch if prey population drops below 0
     if(n[t] < 0){
       n[t] <- 0
     }
-    
+
     # Catch if predators population drops below 0
     if(p[t] < 0){
       p[t] <- 0
     }
-    
+
   }
-  
+
   return(cbind(time, n, p))
-  
+
 }
 
 # Set the specific parameters for the LotkaVolterra model
@@ -151,7 +167,7 @@ initPred <- 10		# initial predator abundance at time t = 1
 a <- 0.01 		# attack rate
 r <- 0.2 		# growth rate of prey
 m <- 0.05 		# mortality rate of predators
-k <- 0.1 
+k <- 0.1
 initPreyVec <- seq(from = 10, to = 100, by = 10) # vector of initial prey abundances at time t = 1
 
 # Initialize list to storage the results
@@ -162,10 +178,8 @@ for (i in 1:length(initPreyVec)) {
   temp <- LotkaVolterra(totalGenerations, initPreyVec[i], initPred, a, r, m, k)
   data_storage <- data.frame("TimeStep" = temp[,1], "PreyAbundance" = temp[,2], "PredatorAbundance" = temp[,3])
   list_diff_prey[[i]] <- data_storage
-  
-  # Name each list entry according to the inital prey abundance 
+
+  # Name each list entry according to the inital prey abundance
   names(list_diff_prey)[i] <- sprintf("Inital Prey: %s", initPreyVec[i])
 }
-
-
 
