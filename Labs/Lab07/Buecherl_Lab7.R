@@ -1,7 +1,7 @@
 # EBIO 5420: Computational Biology
 # Prof: Samuel Flaxman
 # Student: Lukas Buecherl
-# Lab 6
+# Lab 7
 ###############################################################################
 
 #############################################
