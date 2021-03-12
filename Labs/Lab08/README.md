@@ -12,7 +12,7 @@ This directory includes code to calculate the discrete-time logistic growth mode
 
 The model plots the calculated abundance over the specified number of generations and saves the results as a comma-separated values file (_.csv_). An example plot can be seen here:
 
-![ExamplePlot](insert link)
+![ExamplePlot](https://github.com/LukasBuecherl/CompBioLabsAndHW/blob/main/Labs/Lab08/ExamplePlot.png)
 
 
 
