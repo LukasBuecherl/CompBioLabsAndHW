@@ -75,7 +75,8 @@ The number of rings of a tree can be used to determine the age of the tree. Howe
 The work revolves around using the _R_ package **tidyverse**, specifically dplyr and tidyr, and the package **ggplot2** to analyze and plot the data. The following steps show the outline of the project:
 1. Importing the data and checking for inconsistencies
 2. Calculate the average growth rate by taking the mean of ring width increase per year over 20 years using **tidyverse**
-4. Find a way to visualize the average growth rate for the five tree species in dependence of elevation and location using **ggplot2**
+3. Find a way to visualize the average growth rate for the five tree species in dependence of elevation and location using **ggplot2**
+4. If steps 1-3 are completed early, the authors also provide an additional dataset containing information of the neighboring trees of the individuals in the original dataset within a 15 meter radius. If time allows, this additional dataset can be explored to see how competition influences the growth rate of an individual. In that case, this README file will be updated.
 
 Finally, it will be interesting to compare the outcome to the expected results. I expect the average growth rate to increase in high elevation and former colder climates.
 
