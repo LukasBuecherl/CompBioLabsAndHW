@@ -3,13 +3,20 @@
 # Student: Lukas Buecherl
 # Final Project
 ###############################################################################
+#
+# CODE WRITTEN BY LUKAS BUECHERL FOR THE FINAL PROJECT FOR COURSE EBIO 5420.
+# CONTACT: lukas.buecherl@colorado.edu
+# GitHub of project: https://github.com/LukasBuecherl/CompBioLabsAndHW/tree/main/Final_Project
+# GitHub of assingment: https://github.com/flaxmans/CompBio_on_git/blob/main/Assignments/09_Independent_Project_Step2.md
+# 
+# This is a library file that contains functions needed for the analysis in 
+# the file Buecherl_FinalProject.R
+###############################################################################
 
 # Needed Packages
 require("tidyverse")
 library("ggplot2")
 library("dplyr")
-
-
 
 
 Calculate_Growth_Ring <- function(data, con, Species_names) {

@@ -3,6 +3,37 @@
 # Student: Lukas Buecherl
 # Final Project
 ###############################################################################
+#
+# CODE WRITTEN BY LUKAS BUECHERL FOR THE FINAL PROJECT FOR COURSE EBIO 5420.
+# CONTACT: lukas.buecherl@colorado.edu
+# GitHub of project: https://github.com/LukasBuecherl/CompBioLabsAndHW/tree/main/Final_Project
+# GitHub of assingment: https://github.com/flaxmans/CompBio_on_git/blob/main/Assignments/09_Independent_Project_Step2.md
+#
+# Introduction:
+# Human influence on the climate system of Earth may result in dangers for various 
+# aspects of life on our planet [1]. One way to quantify the effects of climate 
+# change on our planet is by looking at the planets forests. More specifically, 
+# the growth rate of trees is an indicator to study the effects of the climate on 
+# the trees over a longer time period [2]. In this final project, I will analyze 
+# the ring width of five common species of trees in the Rocky Mountains in the 
+# United States. My driving questions for this project are:
+#
+# 1. Comparing the growth rate in relation to the elevation of the individuals 
+# among five different tree species
+
+# 2. Comparing the growth rate in relation to the location (latitude) of the 
+# individuals among five different tree species
+#
+# The following code will prune the dataset, calculate the average growth of 
+# the ring width and stem diamater for each species for each year and plot the
+# results seperated by latitude and elevation. The original data was published 
+# in [2].
+#
+# References 
+# 1. Lorenzoni, I., Pidgeon, N.F. Public Views on Climate Change: European and USA Perspectives. Climatic Change 77, 73–95 (2006). https://doi.org/10.1007/s10584-006-9072-z
+# 2. Buechling, A., Martin, P.H. and Canham, C.D., Climate and competition effects on tree growth in Rocky Mountain forests. J Ecol, 105: 1636-1647 (2017). https://doi.org/10.1111/1365-2745.12782
+#
+###############################################################################
 
 # Clear Environment 
 rm(list = ls())
@@ -451,8 +482,8 @@ figure_stem_elevation <- ggarrange(
 #################################################################
 
 # Run commands to show the figures
-figure_ring_latitude
-figure_ring_elevation
+print(figure_ring_latitude)
+print(figure_ring_elevation)
 
-figure_stem_latitude
-figure_stem_elevation
+print(figure_stem_latitude)
+print(figure_stem_elevation)
