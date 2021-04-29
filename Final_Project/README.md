@@ -2,19 +2,32 @@
 
 ## Introduction
 
-Human influence on the climate system of Earth may result in dangers for various aspects of life on our planet [1]. One way to quantify the effects of climate change on our planet is by looking at the planets forests. More specifically, the growth rate of trees is an indicator to study the effects of the climate on the trees over a longer time period [2]. In this final project, I will analyze the ring width of five common species of trees in the Rocky Mountains in the United States. My driving questions for this project are:
+Human influence on the climate system of Earth may result in dangers for various aspects of life on our planet [1]. One way to quantify the effects of climate change on our planet is by looking at the planet's forests. More specifically, the growth rate of trees is an indicator to study the effects of the climate on the trees over a longer period [2]. In this final project, I will analyze the ring width of five common species of trees in the Rocky Mountains in the United States. My driving questions for this project are:
 * Comparing the growth rate in relation to the elevation of the individuals among five different tree species
 * Comparing the growth rate in relation to the location (_latitude_) of the individuals among five different tree species
 
 
 <hr>
 
+## Files in this repository
+
+This repository includes the following files:
+
+* A 5-minute presentation of this work
+* The R code producing the results
+* Unused code of previous iterations of the working code
+* A library file containing functions needed to run the analysis
+* The original dataset (see below)
+
+The results of the work are stored in the directory called results.
+<hr>
+
 ## Summary of Data to be Analyzed
 
-### Goals of original study that produced the data
+### Goals of the original study that produced the data
 The original study published by Arne Buechling et al [2], investigates the leading contributors to the diameter growth of five common tree species in the Rocky Mountains in the western US. The work is based on nonlinear regression models, estimating the effects of precipitation, temperature, and biotic interactions. In their results, the authors claim that the effect of climate change will be complex and specific to the species.  
 
-### Brief description of methodology that produced the data
+### Brief description of the methodology that produced the data
 
 The data was collected from trees of five different species from five collection sides from the southern beginning of the Rocky Mountains in New Mexico up to the Canadian border in Montana. The following tree species were sampled:
 
@@ -46,7 +59,7 @@ For each tree the following data was collected:
 * Ring width (_mm_)
 * Date collected
 
-The data was collected in 2012 and 2013. Damaged trees or saplings were not samlped.  The stem diameter at breast hight (1.3 _m_) and the annual radial increment over the last 20 years was measured. An average of 2.4 cores were collected per tree at a height of 30 _cm_.
+The data was collected in 2012 and 2013. Damaged trees or saplings were not sampled.  The stem diameter at breast height (1.3 _m_) and the annual radial increment over the last 20 years were measured. An average of 2.4 cores was collected per tree at a height of 30 _cm_.
 
 ### Type of data in this data set:  
 
@@ -63,7 +76,7 @@ The final sample size ranges between 131 to 179 samples per species. The data is
 
 So far by looking over the data no inconsistencies could be found.
 
-#### What the data represent about the biology?
+#### What the data represent about biology?
 
 The number of rings of a tree can be used to determine the age of the tree. However, tree rings do not have to be annual. Besides age, the climate, and vegetation habit also influence tree ring width and formation  [3].
 
@@ -75,8 +88,8 @@ The number of rings of a tree can be used to determine the age of the tree. Howe
 The work revolves around using the _R_ package **tidyverse**, specifically dplyr and tidyr, and the package **ggplot2** to analyze and plot the data. The following steps show the outline of the project:
 1. Importing the data and checking for inconsistencies
 2. Calculate the average growth rate by taking the mean of ring width increase per year over 20 years using **tidyverse**
-3. Find a way to visualize the average growth rate for the five tree species in dependence of elevation and location using **ggplot2**
-4. If steps 1-3 are completed early, the authors also provide an additional dataset containing information of the neighboring trees of the individuals in the original dataset within a 15 meter radius. If time allows, this additional dataset can be explored to see how competition influences the growth rate of an individual. In that case, this README file will be updated.
+3. Find a way to visualize the average growth rate for the five tree species dependent on the elevation and location using **ggplot2**
+4. If steps 1-3 are completed early, the authors also provide an additional dataset containing information of the neighboring trees of the individuals in the original dataset within a 15-meter radius. If time allows, this additional dataset can be explored to see how competition influences the growth rate of an individual. In that case, this README file will be updated.
 
 Finally, it will be interesting to compare the outcome to the expected results. I expect the average growth rate to increase in high elevation and former colder climates.
 
