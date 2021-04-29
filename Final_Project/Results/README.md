@@ -59,7 +59,7 @@ Contrary to my work, the authors of the original study [3] used the data they co
 
 ### Results and conclusions
 
-The results for the ring growth increase show a high growth for the years 2003, 2005, and 2007 tree growth.
+The results for the ring growth increase show a high growth for the years 2003, 2005, and 2007.
 
 ![Figure1](Final_Project/Results/RingEle.png?raw=true "Figure 1")
 
