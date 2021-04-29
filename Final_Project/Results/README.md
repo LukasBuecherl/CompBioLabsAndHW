@@ -61,19 +61,19 @@ Contrary to my work, the authors of the original study [3] used the data they co
 
 The results for the ring growth increase show a high growth for the years 2003, 2005, and 2007.
 
-![Figure1](RingEle.png?raw=true "Figure 1")
+![Figure1](https://github.com/LukasBuecherl/CompBioLabsAndHW/blob/30c947e1eddfe4051b0786a9070debb77ae5b12b/Final_Project/Results/RingEle.png?raw=true "Figure 1")
 
  Figure 1 shows the growth increase of the ring width for the five different species compared by elevation. It is interesting to note, that the species _Pinus ponderosa_ and _Pseudotsuga menziesii_ have a strong growth in the mentioned years, compared to the other species. The growth increase also decreases with a higher elevation. When compared by the location, the years 2003 and 2007 again were very successful for tree growth in the South. However in the North (above _45°_) ring growth increase was fluctuating by year as seen in Figure 2.
 
- ![Figure2](RingLat.png?raw=true "Figure 2")
+ ![Figure2](https://github.com/LukasBuecherl/CompBioLabsAndHW/blob/30c947e1eddfe4051b0786a9070debb77ae5b12b/Final_Project/Results/RingLat.png?raw=true "Figure 2")
 
  Contrary to the ring width, the increase of stem diameter growth decreased since 1992, especially below _3000m_. In addition, as seen in Figure 3, the stem diameter increase of _Pinus ponderosa_ above _3000m_ is more fluctuating compared to the increase of the other species.
 
- ![Figure3](StemEle.png?raw=true "Figure 3")
+ ![Figure3](https://github.com/LukasBuecherl/CompBioLabsAndHW/blob/30c947e1eddfe4051b0786a9070debb77ae5b12b/Final_Project/Results/StemEle.png?raw=true "Figure 3")
 
  When looking at the stem growth increase according to location, both Nord and South show a decreasing behavior as seen in Figure 4.
 
- ![Figure4](StemLat.png?raw=true "Figure 4")
+ ![Figure4](https://github.com/LukasBuecherl/CompBioLabsAndHW/blob/30c947e1eddfe4051b0786a9070debb77ae5b12b/Final_Project/Results/StemLat.png?raw=true "Figure 4")
 
 Overall, concluding the project, it is very interesting to see that the ring width increase shows peaks for certain years, whereas the stem diameter increase seems to decrease over time. Future work should be done to connect the years of high ring width increase to the average temperature of that year and investigate the decrease in stem diameter increase.
 
